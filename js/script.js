@@ -14,3 +14,15 @@ document.getElementById('in').oninput = function() {
     }
     document.getElementById('out').innerHTML = out;
 }
+
+document.getElementById('out2').oninput = function() {
+    const offset = 3;
+    var str = this.value;
+    var out = '';
+    for (var i = 0; i < str.length; i++) {
+        var code = str.charCodeAt(i);
+        code = code - offset;
+        out += String.fromCharCode(code);
+    }
+    document.getElementById('out3').innerHTML = out;
+}
