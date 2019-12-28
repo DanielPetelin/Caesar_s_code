@@ -15,6 +15,7 @@ document.getElementById('in').oninput = function() {
     document.getElementById('out').innerHTML = out;
 }
 
+//Расшифровка.
 document.getElementById('out2').oninput = function() {
     const offset = 3;
     var str = this.value;
