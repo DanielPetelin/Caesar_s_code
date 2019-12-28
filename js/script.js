@@ -1,7 +1,10 @@
+//Функция, которая шифрует.
 document.getElementById('in').oninput = function() {
     const offset = 3;
     var help = document.getElementById('help');
+    //из кода в символы.
     var str = this.value;
+    //из символов в код.
     console.log(str.charCodeAt(0));
     var out = '';
     for (var i = 0; i < str.length; i++) {
